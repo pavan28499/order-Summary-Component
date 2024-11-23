@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 13px;
+  background-image: url("./images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: hsl(225, 100%, 94%);
+}
+p {
+  color: hsl(224, 23%, 55%);
+}
+.main {
+  border: 2px solid black;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content {
+  width: 300px;
+  height: auto;
+  border: 0;
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: white;
+}
+.main-image {
+  max-width: 100%;
+}
+.main-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin: 25px;
+}
+.main-content h1 {
+  font-size: 22px;
+  margin: 10px 0;
+  font-weight: 800;
+}
+.pricing {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 0;
+  border-radius: 10px;
+  margin: 0 auto;
+  width: 100%;
+  margin-top: 15px;
+  padding: 15px;
+  background-color: hsl(225, 100%, 98%);
+}
+.pricing a {
+  font-weight: 700;
+  color: hsl(224, 23%, 55%);
+}
+.pricing a:hover {
+  color: hsl(223, 47%, 23%);
+}
+.price {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+.icon {
+  width: 35px;
+}
+.plan {
+  padding-left: 10px;
+}
+.plan p:nth-of-type(1) {
+  font-weight: 700;
+  color: black;
+}
+button {
+  width: 100%;
+  padding: 10px;
+  color: white;
+  border: 0;
+  border-radius: 7px;
+  margin-top: 20px;
+  background-color: hsl(245, 75%, 52%);
+  font-weight: 700;
+  box-shadow: 0px 10px 15px hsl(224, 23%, 55%);
+  cursor: pointer;
+}
+button:hover {
+  background-color: hsl(245, 59%, 61%);
+  color: white;
+}
+.cancel {
+  font-weight: 700;
+  margin: 10px 0;
+  margin-top: 17px;
+  text-decoration: none;
+  color: hsl(224, 23%, 55%);
+}
+.cancel:hover {
+  color: hsl(223, 47%, 23%);
+}
+@media screen and (max-width: 320px) {
+  body {
+    background-image: url(./images/pattern-background-mobile.svg);
+    background-color: hsl(225, 100%, 94%);
+  }
+}
